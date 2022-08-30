@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 23</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="js/bootstrap.bundle.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div>
+
+    <div class="heading">Rock, Paper and Scissors Game</div>
+    <br>
+    <h2 class="subhead">Press the Button of your choice</h2>
+    <div class="button-container d-flex flex-wrap ">
+        <button class="rockButton allButtons" onclick = game.theGame(0)>Rock</button>
+        <button class="paperButton allButtons" onclick = game.theGame(1)>Paper</button>
+        <button class="scissorButton allButtons" onclick = game.theGame(2)>Scissors</button>
+        <button class="resetButton allButtons" onclick = location.reload(true)>Reset</button>
+        <br>
+    </div>
+        <div class="container d-flex flex-wrap justify-content-center align-items-center">
+            <h2 id="outputHeading"> </h2>
+        </div>
+        <div class="container d-flex flex-wrap justify-content-center align-items-center">
+            <h2 id="outputSubHeading" class="pt-20">  </h2>
+        </div>
+
+
+    <div class ="container canvas-container">
+        <div class="row canvas d-flex flex-nowrap">
+
+            <div class="col-sm-6 handLeft">
+                <img src ="img/youRock.jpg" alt = "youRock" style="height:100px; width:auto; " id="leftRock" class="hide-lefthands ">
+                <img src ="img/youPaper.jpg" alt = "youRock" style="height:100px; width:auto; " id="leftPaper" class="hide-lefthands">
+                <img src ="img/youScissors.jpg" alt = "youRock" style="height:100px; width:auto; " id="leftScissors" class="hide-lefthands">
+             
+            </div>
+
+            <div class=" col-sm-6 handRight">
+                <img src ="img/botRock.jpg"  alt = "botRock" style="height:100px; width:auto;" id="rightRock" class="hide-righthands">
+                <img src ="img/botPaper.jpg"  alt = "botRock" style="height:100px; width:auto;" id="rightPaper" class="hide-righthands">
+                <img src ="img/botScissors.jpg"  alt = "botRock" style="height:100px; width:auto;" id="rightScissors" class="hide-righthands">
+            </div>
+
+        </div>
+    </div>
+ 
+</div>
+<br>
+<br>
+<div class="container d-flex flex-nowrap justify-content-center align-items-center" >
+    <p  classes ="d-flex flex-nowrap" >
+      <h6 > Wins = <input classes ="d-flex flex-nowrap" id="wscore" type="number" disabled style="width: 100px; background: none; border: none;"></h6>
+        <h6>Losses = <input classes ="d-flex flex-nowrap" id="lscore" type="number" disabled style="width: 100px; background: none; border: none;"></h6> 
+        <h6>Draws = <input classes ="d-flex flex-nowrap" id="dscore" type="number" disabled style="width: 100px; background: none; border: none;"></h6>
+    
+    </p>
+
+</div>
+<br>
+    <!-- Game History -->
+    <div class="container bg-success" style="max-width: 800px;">
+        <h1 >Game History</h1>
+        <ol  id="gameHistory" reversed>
+
+
+        </ol>
+    </div>
+</div>
+</body>
+<script src = "main.js"></script>
+</html>

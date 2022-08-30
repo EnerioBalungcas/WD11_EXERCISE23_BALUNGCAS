@@ -1,0 +1,309 @@
+.heading {
+    font-size: 32pt;
+    text-align: center;
+    font-weight: 900;
+    background-color: blue;
+    color:azure;
+    min-height: 75px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    border-radius: 20px;
+
+    
+}
+
+.subhead {
+    font-size: 18pt;
+    text-align: center;
+    /* font-weight: 900; */
+    /* background-color: rgb(78, 78, 80); */
+    /* color:white; */
+    min-height: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    
+}
+.outputContainer {
+
+    color:rgb(240, 11, 11);
+    /* min-height: 150px; */
+    /* max-width: 800px; */
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+.output {
+
+    color:rgb(240, 11, 11);
+    /* min-height: 150px; */
+    /* max-width: 800px; */
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 36pt;
+
+}
+.outputStyle {
+    font-size: 18pt;
+    text-align: center;
+    font-weight: 500;
+    background-color: lightgreen;
+    color:rgb(50, 7, 243);
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    display:flex;
+ 
+}
+
+.winner {
+    background-color: yellow;
+}
+
+.loser {
+    background-color: rgb(255, 188, 5);
+}
+#compResult{
+    font-weight: bolder;
+}
+
+.vs {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    /* background-color: brown; */
+    /* min-height: 50px; */
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.buttonSelection {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+        
+        /* flex-direction: column;
+        display: flex; */
+}
+.allButtons {
+    font-size: 18pt;
+    font-weight: bolder;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    height: 50px;
+    width: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    /* border-radius: 10px; */
+    background: none;
+    border: none;
+    border: 2px solid blue;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.6s;
+    color: blue;
+    /* font-weight: bold;; */
+}
+.allButtons:hover {
+    background: #3ab8f1;
+    color: #fff;
+}
+.button-active {
+    background: #3ab8f1;
+    color: #fff;
+}
+/* .rockButton {
+    background-color: grey;
+}
+
+.paperButton {
+    background-color: whitesmoke;
+}
+
+.scissorButton {
+    background-color: goldenrod;
+} */
+
+.resetButton {
+    background-color: red;
+}
+.image {
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+    border: solid blue;
+}
+/* button division */
+.button-container {
+    width: 100%;
+    padding: 20px 0px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex: wrap;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+/* .button-container button {
+    margin-left: 5px;
+} */
+
+/* .curve-button {
+    background: none;
+    border: none;
+    border: 2px solid #3ab8f1;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.6s;
+    color:#3ab8f1;
+    font-weight: bold;
+
+} */
+
+.curve-button:hover {
+    background: #3ab8f1;
+    color: #fff;
+}
+.button-active {
+    background: #3ab8f1;
+    color: #fff;
+}
+.hidden {
+    display: none !important;
+}
+.show {
+    display:block !important;
+}
+.hide-lefthands {
+    display: none !important;
+}
+.show-lefthands {
+    display:inline-block !important;
+}
+.hide-righthands {
+    display: none !important;
+}
+.show-righthands {
+    display:inline-block !important;
+}
+
+.canvas-container {
+    max-width: 800px;
+    max-height: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-content: center;
+    /* background-color: aqua; */
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    justify-items: center;
+    /* display: none; */
+
+}
+.canvas {
+    /* background-color: red; */
+    max-height: 300px;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    justify-items: center;
+
+}
+.handLeft {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: end;
+    padding-right: 20px;
+
+}
+.handRight {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: start;
+    padding-left: 20px;
+
+}
+.slideToLeft {
+    animation-duration: 2s;
+    animation-name: slideleft;
+    position: relative;
+  }
+  
+  @keyframes slideleft {
+    0%   { right:-100%; top:0px;}
+    100% { right:0px; top:0px;}
+  }
+ 
+  .slideToRight {
+    animation-duration: 2s;
+    animation-name: slideright;
+    position: relative;
+  }
+  
+  @keyframes slideright {
+    0%   { left:-100%; top:0px;}
+    100% { left:0px; top:0px;}
+  }
+.handShakeLeft {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    animation-duration: 0.6s;
+    animation-name: shakeleft;
+    animation-iteration-count: 3;
+    position: relative;
+  }
+  
+  @keyframes shakeleft {
+    0%   { bottom: 0px; rotate: -15deg;}
+    25%   { bottom:20px; rotate: -25deg;}
+    50%   { bottom:40px; rotate: -50deg;}
+    75%   { bottom:20px; rotate: -25deg;}
+    100%   { bottom:0px; rotate: -15deg;}
+  }
+.handShakeRight {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    animation-duration: 0.6s;
+    animation-name: shakeright;
+    animation-iteration-count: 3;
+    position: relative;
+  }
+  
+  @keyframes shakeright {
+    0%   { bottom: 0px; rotate: 15deg;}
+    25%   { bottom:20px; rotate: 25deg;}
+    50%   { bottom:40px; rotate: 50deg;}
+    75%   { bottom:20px; rotate: 25deg;}
+    100%   { bottom:0px; rotate: 15deg;}
+   
+  }
+ 
